@@ -75,3 +75,66 @@ string v = "15-";
 int.TryParse(v, out int x);
 Console.WriteLine(x);
 Console.WriteLine("Conversão realizada com sucesso!");
+
+//Operadores condicionais
+
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 4;
+
+// if (quantidadeEmEstoque >= quantidadeCompra)
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe, não temos a quantidade desejada em estoque.");
+// }
+
+//Operadores condicionais - refatorando o código acima
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 0;
+// bool possivelVenda = quantidadeCompra>0 && quantidadeEmEstoque >= quantidadeCompra;
+
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+// Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+
+// if (quantidadeCompra == 0)
+// {
+//     Console.WriteLine("Venda inválida.");
+// }
+// else if (possivelVenda)
+// {
+//     Console.WriteLine("Venda realizada.");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe, não temos a quantidade desejada em estoque.");
+// }
+
+//Operadores condicionais - switch case
+
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+
+switch (letra)
+{
+    case "a":
+        Console.WriteLine("Vogal.");
+        break;
+    case "e":
+        Console.WriteLine("Vogal.");
+        break;
+    case "i":
+        Console.WriteLine("Vogal.");
+        break;
+        case "o":
+        Console.WriteLine("Vogal.");
+        break;
+        case "u":
+        Console.WriteLine("Vogal.");
+        break;
+    default:
+        Console.WriteLine("Você digitou uma letra não vogal.");
+        break;
+}
