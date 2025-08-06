@@ -114,27 +114,67 @@ Console.WriteLine("Conversão realizada com sucesso!");
 
 //Operadores condicionais - switch case
 
-Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine();
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
 
-switch (letra)
+// switch (letra)
+// {
+//     case "a":
+//         Console.WriteLine("Vogal.");
+//         break;
+//     case "e":
+//         Console.WriteLine("Vogal.");
+//         break;
+//     case "i":
+//         Console.WriteLine("Vogal.");
+//         break;
+//         case "o":
+//         Console.WriteLine("Vogal.");
+//         break;
+//         case "u":
+//         Console.WriteLine("Vogal.");
+//         break;
+//     default:
+//         Console.WriteLine("Você digitou uma letra não vogal.");
+//         break;
+// }
+
+// Operadores lógicos
+
+// bool ehMaiorDeIdade = true;
+// bool possuiAutorizacaoDoResoponsavel = false;
+
+// if (ehMaiorDeIdade || possuiAutorizacaoDoResoponsavel)
+// {
+//     Console.WriteLine("Entrada liberada.");
+// }
+// else
+// {
+//     Console.WriteLine("Entrada não liberada.");
+// }
+
+//Operadores lógicos - AND
+// bool possuiPresencaMinima = true;
+// double media = 7.5;
+
+// if (possuiPresencaMinima && media >= 7)
+// {
+//     Console.WriteLine("Aprovado.");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado.");
+// }
+
+//Operadores lógicos - NOT
+bool choveu = true;
+bool estaTarde = true;
+
+if (!choveu && !estaTarde)
 {
-    case "a":
-        Console.WriteLine("Vogal.");
-        break;
-    case "e":
-        Console.WriteLine("Vogal.");
-        break;
-    case "i":
-        Console.WriteLine("Vogal.");
-        break;
-        case "o":
-        Console.WriteLine("Vogal.");
-        break;
-        case "u":
-        Console.WriteLine("Vogal.");
-        break;
-    default:
-        Console.WriteLine("Você digitou uma letra não vogal.");
-        break;
+    Console.WriteLine("Vou pedalar.");
+}
+else
+{
+    Console.WriteLine("Vou pedalar um outro dia.");
 }
